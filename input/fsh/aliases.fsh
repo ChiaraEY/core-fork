@@ -59,3 +59,4 @@ Alias: $vs-aifa-ge = https://www.hl7.it/fhir/terminology/ValueSet/aifa-ge
 Alias: $cs-aifa-ge = https://www.hl7.it/fhir/terminology/CodeSystem/aifa-gruppo-equivalenza
 Alias: $vs-nullFlavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor
 Alias: $cs-nullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
+Alias: $vs-aifa-aic = https://www.hl7.it/fhir/terminology/ValueSet/aifa-aic
