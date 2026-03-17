@@ -21,6 +21,7 @@ Description: "Questo profilo definisce una persona direttamente o indirettamente
 * identifier[codiceFiscale] ^short = "Codice Fiscale del professionista sanitario o della persona coinvolta nella procedura sanitaria."
 * identifier[codiceFiscale].system 1..
 * identifier[codiceFiscale].system = "urn:oid:2.16.840.1.113883.2.9.4.3.2" 
+* identifier[codiceFiscale].value 1..
 
 //----------------------ID Regionale-----------------------
 // * identifier[idRegionale]
@@ -34,6 +35,7 @@ Description: "Questo profilo definisce una persona direttamente o indirettamente
 * identifier[codiceANA] ^short = "Codice ANA del professionista sanitario o della persona coinvolta."
 * identifier[codiceANA].system 1..
 * identifier[codiceANA].system = "urn:oid:2.16.840.1.113883.2.9.4.3.15"
+* identifier[codiceANA].value 1..
 
 //----------------------Altro------------------------------
 * identifier[altro] ^short = "Qualora l'identifier del practitioner non ricada in nessuna delle precedenti alternative, è possibile utilizzare la slice 'altro'"

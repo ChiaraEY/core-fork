@@ -18,26 +18,33 @@ Description: "Rappresentazione del medicinale tramite il profilo Medication"
 
 //----------------------AIC-----------------------
 * code.coding[AIC]
-* code.coding[AIC] ^short = "AIC del medicinale"
+* code.coding[AIC] ^short = "Codice AIC del farmaco"
 * code.coding[AIC].system 1..
 * code.coding[AIC].system = "urn:oid:2.16.840.1.113883.2.9.6.1.5" 
-* code.coding[AIC].code ^short = "Codice AIC del medicinale"
+* code.coding[AIC].code 1..
+* code.coding[AIC].code from $vs-aifa-aic
+* code.coding[AIC].code ^short = "Codice AIC del farmaco"
 //----------------------ATC-----------------------
 * code.coding[ATC]
-* code.coding[ATC] ^short = "ATC del medicinale"
+* code.coding[ATC] ^short = "Codice ATC del farmaco"
 * code.coding[ATC].system 1..
-* code.coding[ATC].system = $vs-whoatc
-* code.coding[ATC].code ^short = "Codice ATC del medicinale"
-//----------------------Gruppo Equivalenza-----------------------
+* code.coding[ATC].system = "urn:oid:2.16.840.1.113883.6.73"
+* code.coding[ATC].code 1..
+* code.coding[ATC].code from $vs-whoatc
+* code.coding[ATC].code ^short = "Codice ATC del farmaco"
+//----------------------Gruppo Equivalenza---------------------
 * code.coding[GruppoEquivalenza]
-* code.coding[GruppoEquivalenza] ^short = "Gruppo di equivalenza del medicinale"
+* code.coding[GruppoEquivalenza] ^short = "Gruppo di equivalenza del farmaco"
 * code.coding[GruppoEquivalenza].system 1..
-* code.coding[GruppoEquivalenza].system = $vs-aifa-ge
-* code.coding[GruppoEquivalenza].code ^short = "Codice del gruppo di equivalenza del medicinale"
+* code.coding[GruppoEquivalenza].system = "urn:oid:2.16.840.1.113883.2.9.6.1.51"
+* code.coding[GruppoEquivalenza].code 1..
+* code.coding[GruppoEquivalenza].code from $vs-aifa-ge
+* code.coding[GruppoEquivalenza].code ^short = "Codice del gruppo di equivalenza del farmaco"
 //----------------------Altro-----------------------
-* code.coding[altro] ^short = "Qualora il codice del medicinale non ricada in nessuna delle precedenti alternative, è possibile utilizzare la slice 'altro'"
+* code.coding[altro] ^short = "Qualora il codice del farmaco/integratore non ricada in nessuna delle precedenti alternative, è possibile utilizzare la slice 'altro'"
 * code.coding[altro].system = $vs-nullFlavor
-* code.coding[altro] ^short = "Motivo per cui non è stato possibile codificare il medicinale con nessuno dei codici previsti nelle slice precedenti."
-* code.coding[altro].display ^short = "Stringa libera per descrivere il medicinale"
+* code.coding[altro].code 1..
+//* code.coding[altro].display ^short = "Stringa libera per descrivere il farmaco"
+
 
 //* manufacturer only Reference(OrganizationItcore)
