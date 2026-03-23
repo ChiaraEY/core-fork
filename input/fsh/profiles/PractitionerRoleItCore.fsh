@@ -14,5 +14,5 @@ Description: "Questo profilo definisce un insieme specifico di ruoli, sedi, spec
 * practitioner only Reference(PractitionerItcore)
 * practitioner ^short = "Riferimento al professionista"
 
-//* organization only Reference(OrganizationItcore)
+* organization only Reference(OrganizationItCore)
 * organization ^short = "Informazioni relative all'organizzazione in cui opera il Practitioner."

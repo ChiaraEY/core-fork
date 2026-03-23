@@ -44,6 +44,6 @@ Usage: #example
 
 * qualification.code = $cs-titoloStudio#40102014 "Tecnico di radiologia medica"
 
-* communication.coding.system = "urn:oid:2.16.840.1.113883.4.642.3.20"
+* communication.coding.system = "urn:ietf:bcp:47"
 * communication.coding.code = #it
-* communication.coding.display = "Italiano"
+* communication.coding.display = "Italian"

@@ -14,7 +14,8 @@ Description: "Esempio di Paziente (uomo) iscritto al SSN"
 * extension[luogoNascita].valueAddress.country = "IT"
 * extension[luogoNascita].valueAddress.state = $cs-regioni#180 "Calabria"
 * extension[luogoNascita].valueAddress.use = #old "old"
-
+* extension[luogoNascitaCodeable].valueCodeableConcept = $cs-istat-comune#079023 "Catanzaro"
+* extension[professione].valueCodeableConcept = $cs-istatprofessione#5.4.8.4 "Vigili del fuoco e professioni assimilate"
 * extension[titoloStudio].valueCodeableConcept = $cs-titoloStudio#40502000 "Diploma di istruzione secondaria superiore di Liceo classico"
 
 

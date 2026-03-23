@@ -115,10 +115,13 @@ Description: "Rappresentazione del paziente tramite il profilo Patient"
 * address only AddressItcore 
 * address obeys it-city-required
 * managingOrganization ^short = "Organizzazione a cui è lasciata la custodia del dei dati del paziente."
-* managingOrganization only Reference(Organization)
+* managingOrganization only Reference(OrganizationItCore)
 
 * generalPractitioner ^short = "Professionista o organizzazione responsabile principale dell’assistenza al paziente (MMG/PLS)."
-* generalPractitioner only Reference(PractitionerItcore or PractitionerRoleItcore or Organization)
+* generalPractitioner only Reference(PractitionerItcore or PractitionerRoleItcore or OrganizationItCore)
+
+* link.other only Reference(PatientItcore or RelatedPerson)
+
 
 Invariant: pat-id-cf-1
 Description: "Il Codice Fiscale deve essere di 16 caratteri alfanumerici (3 per il cognome; 3 per il nome; 2 caratteri numerici per l'anno di nascita; 1 per il mese di nascita; 2 caratteri numerici per il giorno di nascita ed il sesso; 4 associati al Comune oppure allo Stato estero di nascita. 1 carattere di controllo."

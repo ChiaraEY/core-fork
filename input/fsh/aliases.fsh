@@ -32,6 +32,8 @@ Alias: $vs-stato = https://www.hl7.it/fhir/terminology/ValueSet/istat-stato
 Alias: $vs-istat-comune = https://www.hl7.it/fhir/terminology/ValueSet/istat-comune
 Alias: $cs-titoloStudio = https://www.hl7.it/fhir/terminology/CodeSystem/istat-ctsi03
 Alias: $cs-istatprofessione = https://www.hl7.it/fhir/terminology/CodeSystem/istat-professioni
+Alias: $cs-istat-statoNascita = https://www.hl7.it/fhir/terminology/CodeSystem/istat-unitaAmministrativeTerritorialiEstere
+Alias: $cs-istat-comune = https://www.hl7.it/fhir/terminology/CodeSystem/istat-unitaAmministrativeTerritoriali
  
 
 
@@ -62,12 +64,16 @@ Alias: $cs-aifa-ge = https://www.hl7.it/fhir/terminology/CodeSystem/aifa-gruppo-
 Alias: $vs-nullFlavor = http://terminology.hl7.org/ValueSet/v3-NullFlavor
 Alias: $cs-nullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $vs-aifa-aic = https://www.hl7.it/fhir/terminology/ValueSet/aifa-aic
-Alias: $originalText = http://hl7.org/fhir/StructureDefinition/originalText
+Alias: $ext-originalText = http://hl7.org/fhir/StructureDefinition/originalText|5.2.0
 
 //Organization
 Alias: $vs-asl =  https://www.hl7.it/fhir/terminology/ValueSet/uri-idAslRegione
+Alias: $cs-asl = https://www.hl7.it/fhir/terminology/CodeSystem/cs-asl
 Alias: $vs-aslRegione = https://www.hl7.it/fhir/terminology/ValueSet/mds-asl-vs
 Alias: $vs-aziendaOspedaliera = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idAziendeOspedaliere
+Alias: $cs-aziendaOspedaliera = https://www.hl7.it/fhir/terminology/CodeSystem/minsan-hsp
 Alias: $vs-struttura = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture
 Alias: $vs-strutturaInterna = https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStruttureInterne 
 Alias: $vs-tipoOrg = https://www.hl7.it/fhir/terminology/ValueSet/tipoOrgSocioSanitaria
+Alias: $cs-tipoOrg = https://www.hl7.it/fhir/terminology/CodeSystem/it-tipoEntita
+

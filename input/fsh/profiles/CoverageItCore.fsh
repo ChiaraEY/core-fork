@@ -17,3 +17,4 @@ Description: "Rappresentazione delle esenzioni attraverso il profilo Coverage"
 * costToBeneficiary.exception.type ^short = "Codice esensione"
 * costToBeneficiary.exception.type from $vs-esenzione-ne (example)
 * costToBeneficiary.exception.period MS 
+* payor only Reference(OrganizationItCore or PatientItcore or RelatedPerson)

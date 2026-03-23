@@ -22,7 +22,6 @@ Description: "Rappresentazione del medicinale tramite il profilo Medication"
 * code.coding[AIC].system 1..
 * code.coding[AIC].system = "urn:oid:2.16.840.1.113883.2.9.6.1.5" 
 * code.coding[AIC].code 1..
-* code.coding[AIC].code from $vs-aifa-aic
 * code.coding[AIC].code ^short = "Codice AIC del farmaco"
 //----------------------ATC-----------------------
 * code.coding[ATC]
@@ -42,8 +41,9 @@ Description: "Rappresentazione del medicinale tramite il profilo Medication"
 * code.coding[GruppoEquivalenza].code ^short = "Codice del gruppo di equivalenza del farmaco"
 //----------------------Altro-----------------------
 * code.coding[altro] ^short = "Qualora il codice del farmaco/integratore non ricada in nessuna delle precedenti alternative, è possibile utilizzare la slice 'altro'"
-* code.coding[altro].system = $vs-nullFlavor
+* code.coding[altro].system from $vs-nullFlavor
 * code.coding[altro].code 1..
-
-
-//* manufacturer only Reference(OrganizationItcore)
+* code.coding[altro].extension contains $ext-originalText named descrizione 0..1
+* code.coding[altro].extension[descrizione] ^short = "Descrizione specifica per il farmaco che non rientra nelle codifiche AIC/ATC/GE"
+* code.coding[altro].extension[descrizione].valueString 1..
+* manufacturer only Reference(OrganizationItCore)
