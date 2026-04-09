@@ -26,6 +26,15 @@ La presente guida ha lo scopo di definire i profili [HL7 FHIR](https://hl7.org/f
 - ProcedureItCore: profilo che definissce le caratteristiche di una prestazione sanitaria.
 
 
+<div>
+  <p></p>
+  <figure>
+    <img src="igCore.png" alt="Core profiles" width="50%"/>
+    <figcaption><strong>Rappresentazione grafica dell'obiettivo della Ig Core</strong></figcaption>
+  </figure>
+  <p></p>
+</div>
+
 ### Dipendenze
 {% include dependency-table.xhtml %}
 
